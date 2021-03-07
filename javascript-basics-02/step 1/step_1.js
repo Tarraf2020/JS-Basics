@@ -1,12 +1,5 @@
-var test = document.getElementById("image1");
-test.addEventListener("mouseover", function change(){
-  var image = document.querySelector("#image1");
+var image = document.querySelector("#image1");
+image.addEventListener("mouseover", function change(){
+  
   image.src = "images/image1_2.jpg";
 } )
-
-
-/*
-function change(){
-  var image = document.querySelector("#image1");
-  image.src = "images/image1_2.jpg";
-}*/
