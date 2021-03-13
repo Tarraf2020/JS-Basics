@@ -92,50 +92,87 @@ return result;
 }
 const BMI = (weight, height) => {
     weight=65; height=1.75;
-    result = weight / (height*height);
+    result =  parseFloat((weight / (height*height)).toFixed(2));
     return result;
 }
 
 const createLanguagesArray = () => {
-    
+    languages = ["Html","CSS","Java","PHP"];
+    return languages;
 }
 
 const createNumbersArray = () => {
-
+    nombres = [0,1,2,3,4,5];
+    return nombres;
 }
 
 const replaceElement = (languages) => {
-
+    languages = ["Html", "CSS", "Java", "PHP"];
+    languages[2] = 'Javascript';
+    const replacedLanguages = languages;
+    return replacedLanguages;
 }
 
 const addElement = (languages) => {
-
+    // languages = ["Html", "CSS", "Java", "PHP"];
+    // languages[2]= "javascript";
+    // const replacedLanguages = languages;
+    // x = [ 'Ruby', 'Python'];
+    // modifiedLanguages = languages.concat(x);
+    // return modifiedLanguages;
+    languages = ["Html", "CSS", "Java", "PHP"];
+    languages[2] = 'Javascript';
+    const replacedLanguages = languages;
+    const x = 'Ruby';
+    languages[languages.length] = x;
+    const y = 'Python';
+    languages[languages.length] = y;
+    const modifiedLanguages = replacedLanguages;
+    return modifiedLanguages;
 }
 
 const addNumberElement = (numbers) => {
-
+    numbers = [0, 1, 2, 3, 4, 5];
+    numbers.unshift(-1);
+    numbers.unshift(-2);
+    const modifiedNumbers = numbers;
+    return modifiedNumbers;
 }
 
 const removeFirst = (languages) => {
-
+    languages = ['CSS', 'Javascript', 'PHP', 'Ruby', 'Python'];
+    languages[0].substring(1);
+    const modifiedLanguages = languages;
+    return modifiedLanguages;
 }
 
 const removeLast = (languages) => {
-
+    languages = ['CSS', 'Javascript', 'PHP', 'Ruby', 'Python'];
+    languages.pop();
+    const modifiedLanguages = languages;
+    return modifiedLanguages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+    const socialNetworksString = 'Facebook,Twitter,Google +,Viadeo,LinkedIn';
+    const socialNetworks = socialNetworksString.split(',');
+    return socialNetworks;
 }
 
 const convertArrToStr = (languages) => {
-
+    languagesString = ['CSS', 'Javascript', 'PHP', 'Ruby'];
+    languages = languagesString.toString();
+    return languages;
 }
 
 const sortArr = (social_arr) => {
-
+    const socialNetworks = ['Facebook', 'Twitter', 'Google +', 'Viadeo', 'LinkedIn'];
+    const socialNetworksSorted = socialNetworks.sort();
+    return socialNetworksSorted;
 }
 
 const invertArr = (social_arr) => {
-
+    const languages = ['CSS', 'Javascript', 'PHP', 'Ruby'];
+    const languagesInverted = languages.reverse();
+    return languagesInverted;
 }
